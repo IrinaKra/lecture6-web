@@ -1,0 +1,14 @@
+accept-ranges: bytes
+cache-control: no-cache
+content-length: 102
+content-type: text/html
+date: Thu, 27 Oct 2022 14:00:03 GMT
+last-modified: Thu, 27 Oct 2022 13:55:52 GMT
+server: IntelliJ IDEA 2022.2.2
+X-Content-Type-Options: nosniff
+x-frame-options: SameOrigin
+x-xss-protection: 1; mode=block
+
+<li>Нагадування_1</li>
+<li>Нагадування_2</li>
+<li>Нагадування_3</li>

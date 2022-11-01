@@ -1,10 +1,91 @@
+html{
+  height: 100%;
+}
+
 h1 {
-  color: green;                           /* колір шрифту */
-  background: #EEE;                       /* колір фону (16-ричний формат)*/
-  font-family: "Courier New", monospace;  /* шрифт */
+  color: white;                         /* колір шрифту */
+  background: #00bfff;                    /* колір фону (16-ричний формат)*/
+  font-family: Luminari, fantasy;         /* шрифт */
+  font-size: 44px;
+  text-align: center;
   height: 50px;                           /* висота елементу */
-  width: 50%;                             /* ширина елементу */
-  border: solid black 5px;                /* стиль границі елементу */
+  width: 95%;                             /* ширина елементу */
   padding: 20px;                          /* відступ від границі елементу до його контенту*/
   margin: 20px;                           /* відступ від границі елементу до іншого елементу */
+}
+
+body {
+    background-color: #00bfff;
+    text-align: center;
+}
+
+p {
+  margin-top: 0;
+}
+
+.container {
+  columns: 250px 2;
+  column-gap: 3px;
+}
+
+.container hr {
+break-after: column;
+}
+
+.card {
+  padding: 0px;
+  margin: 0 0 1em 0;
+}
+
+dl {
+  text-align: left;
+  width: 94%;
+  background-color: #f1f1f1;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.card h2 {
+  font-family: Luminari, fantasy;
+  margin: 0 0 30px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.card img {
+  width:30%;
+  height:30%;
+  align-self: center;
+}
+
+.card a {
+  font-family: fantasy;
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 30px;
+  letter-spacing: 4px
+}
+
+.card a:hover {
+  opacity: 0.8;
+  background: #f0ffff;
+  color: black;
+  border-radius: 5px;
+}
+
+.card input[type='button']:hover {
+  opacity: 0.8;
+  background: #f0ffff;
+  color: black;
+  border-radius: 5px;
+
 }

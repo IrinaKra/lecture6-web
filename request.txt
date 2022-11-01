@@ -1,0 +1,16 @@
+GET /Users/ira/github/lecture6-web/_items.html HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Cookie: Idea-38b4ea5d=815d026f-3c9f-4366-834b-ca2eef4b8168
+Host: localhost:63342
+If-Modified-Since: Thu, 27 Oct 2022 13:55:52 GMT
+Referer: http://localhost:63342/github/lecture6-web/index.html?_ijt=2h0p36me47tsqmcnf35o41m5nm&_ij_reload=RELOAD_ON_SAVE
+sec-ch-ua: "Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36

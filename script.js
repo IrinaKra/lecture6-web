@@ -5,28 +5,32 @@ document.getElementById('addListItem').addEventListener('click', () => {
   let listItemContentEl = document.getElementById('newItemInput');
   // Беремо введене значення
   let listItemContentText = listItemContentEl.value;
-
   // Якщо значення є - додаємо новий елемент до списку
   if (listItemContentText) {
     // Створюємо елемент
-    let listItem = document.createElement('li');
+    let listItem = document.createElement('dl');
     // Встановлюємо його контент рівним значенню з текстового поля
     listItem.textContent = listItemContentText;
-
     // Додаємо створений елемент до списку
     document.getElementById('myList').appendChild(listItem);
-
     // Вичищаємо непотрібне значення з текстового поля
     listItemContentEl.value = '';
   }
 })
-
 // Завантажуємо з сервера файл і додаємо його зміст до списку
 document.getElementById('loadItems').addEventListener('click', () => {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
+  const request = new XMLHttpRequest();
+  request.onload = function() {
     document.getElementById('myList').innerHTML = this.responseText;
   }
-  xhttp.open('GET', '_items.html', true);
-  xhttp.send();
+  request.open('GET', '_items.html', true);
+  request.send();
+})
+
+// "Видалити всі нагадування"
+document.getElementById('deleteAllItems').addEventListener('click', () => {
+  // Знаходимо елемент "Мій список"
+  let myList = document.getElementById('myList');
+  // Видаляємо (очищуємо) увесь вміст
+  myList.innerHTML = '';
 })

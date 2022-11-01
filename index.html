@@ -7,16 +7,27 @@
 </head>
 <body>
   <h1>Моя перша сторінка</h1>
-  <div class="todoList">
-    <h3>Список задач</h3>
-    <ul id="myList">
-    </ul>
-    <input type="text" name="newItemInput" id="newItemInput">
-    <input type="button" name="addListItem" value="Додати задачу" id="addListItem">
-    <input type="button" name="loadItems" value="Завантажити задачі" id="loadItems">
+  <div class="container">
+    <div class="card">
+      <h2>Irina Kravchenko</h2>
+        <div class='center'>
+          <img src="https://avatars.githubusercontent.com/u/30844952?v=4" width="140" height="142" alt="myPhoto">
+        </div>
+    <div class="card">
+        <h3><a href="https://github.com/IrinaKra" title="My GitHub page" >My GitHub</a></h3>
+    </div>
+    <hr>
+    <div class="card">
+      <h2>Список нагадувань:</h2>
+        <input type="text" name="newItemInput" id="newItemInput">
+        <input type="button" name="addListItem" value="Додати нагадування" id="addListItem">
+        <input type="button" name="loadItems" value="Завантажити нагадування" id="loadItems">
+        <input type="button" name="deleteAllItems" value="Видалити всі нагадування" id="deleteAllItems">
+        <ul id="myList"></ul>
+    </div>
+  </div>
   </div>
   <div id="dataLoader">
-
     <p id="data"></p>
   </div>
   <script src="script.js"></script>
